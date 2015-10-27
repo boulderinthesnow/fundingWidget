@@ -1,0 +1,38 @@
+# Instructions
+
+Using HTML/CSS/JS recreate the donate widget at http://i.imgur.com/D8z7OsB.png.
+
+## Colors
+
+    blue: #20A1D4
+    green: #1CBC2C
+    orange: #EF5F3C
+    black: #424242
+    grey: #777
+    light grey: #eaeaea
+
+## Requirements
+- The goal amount for donation is $500.
+- The amount contributed should start at $0.
+- The progress bar should reflect the percent of goal funded.
+- The tooltip should only be displayed when user hovers over the progress bar.
+- The tooltip should display the amount left to meet the donation goal.
+- User should be able add only dollar amounts in the textbox.
+- When user clicks on Give Now button, the progress bar and
+   tooltip should update to reflect new amounts
+- The Why give $50 text links to auction.com
+- The Tell your friends button should open up auction.com in a new tab.
+- Don't use any html/css component frameworks like bootstrap.
+- Use of jQuery/Angular is permitted.
+
+## You will be evaluated on the following:
+- Completion of the assignment in timely manner.
+- Coding convention
+- Best practices for naming etc.
+- Any unit tests.
+- Breaking down of the problem in smaller chucks.
+- Use of directives.
+- Github commits & messages. (Don’t do a single commit)
+
+## Deliverable
+- Please send us a link to public Github repo by 3:00pm Monday Oct 26, 2015.
