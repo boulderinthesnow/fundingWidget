@@ -11,21 +11,29 @@
 <body ng-controller="FundController">
 	<div class="container">
 		<div id="tool-tip" class="box-sizing">
-			<p>$500 still needed for this project</p>
+			<p><span style="font-weight:bold;">$500</span> still needed for this project</p>
 		</div>
 		<div id="down-triangle" class="box-sizing"></div>
 		<div id="funding-box" class="box-sizing">
-		<div id="status-bar"></div>
+		<div id="status-bar">
+			<div id="progress-bar"></div>
+		</div>
 			<div id="main-content">
-				<div id="time-left">
-					<p>Only 3 days left to fund this project</p>
-				</div>
-				<div id="message">
+					<p id="first-line">Only 3 days left to fund this project</p>
 					<p>Join the 5 other doners who have already suppported this project. Every dollar helps</p>
 				</div>
-				<div id="input-area">
-					<input type="text" name="" id="input-button" height="105px">
-					<button id="give-button">Give Now</button>
+				<div id="wrap-block">
+					<div id="input-block">
+						<!-- <span id="input-container" class="box-sizing">
+							<span id="input-money-sign">$</span>
+							<input type="text" name="" id="input-value">
+						</span> -->
+						<div id="input-left">
+							<p>$</p>
+							<input type="text">
+						</div>
+						<button id="give-button">Give Now</button>
+					</div>
 				</div>
 			</div>
 			<div id="friends-button"></div>

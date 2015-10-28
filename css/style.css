@@ -1,13 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,800);
 /*
     blue: #20A1D4
     green: #1CBC2C
     orange: #EF5F3C
     black: #424242
     grey: #777
-    light grey: #eaeaea*/
+    light grey: #eaeaea
+    */
+
 
 body {
 	background-color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+p {
+	margin: 0;
+	line-height: 1.7;
 }
 
 .box-sizing {
@@ -17,7 +26,7 @@ body {
 .container {
 	/*background-color: indianRed;*/
 	height: 695px;
-	width: 620px;
+	width: 605px;
 
 	margin-right: 50px; 
 	margin-left: 50px; 
@@ -26,10 +35,15 @@ body {
 
 }
 
+#wrap-block {
+	display: flex;
+	justify-content: center;
+}
+
 .container #funding-box {
 	background-color: white;
 	height: 570px;
-	width: 620px;
+	width: 605px;
 	margin-top: 10px;
 	border: solid 2px #eaeaea;
 }
@@ -37,24 +51,34 @@ body {
 #funding-box #status-bar {
 	height: 30px;
 	border-bottom: solid 2px #eaeaea;
-	background-color: #eaeaea;
+	background-color: #fafafa;
+	overflow: hidden;
 
 }
+
+#funding-box #status-bar #progress-bar {
+	background-color: #EF5F3C;
+	height: 100%;
+	width: 451px;
+
+
+}
+
 
 .container #tool-tip {
 	background-color: #424242;
 	height: 105px;
-	width: 620px;
+	width: 605px;
 	border-radius: 7px;
-	padding-right: 80px;
-	padding-left: 80px;
-	padding-top: 30px;
-	padding-bottom: 30px;
 	color: white;
 	font-size: 30px;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 }
+
 
 .container #down-triangle {
 	width: 0; 
@@ -66,27 +90,67 @@ body {
 }
 
 .container #main-content {
-	background-color: yellow;
-	padding-right: 50px; 
-	padding-left: 50px; 
-	padding-top: 30px;
-	font-size: 35px;
+	font-size: 27px;
+	padding: 40px; 
+	color: #777;
+}
+
+#first-line {
+	margin-bottom: 30px;
 }
 
 input {
-    height:100px;
-    font-size:14pt;
-    margin-right: 20px;
-    /*width: 262px;*/
-    float: left;
-    border-radius: 7px;
-    border:2px solid #cccccc
+    font-size: 40px;
+    border: none;
+    outline: none;
+    width: 75%;
+    vertical-align:middle;
+    margin-bottom: 1px;
+}
+
+#input-container {
+	height:100px;
+	float: left;
+	border-radius: 7px;
+	border: solid 2px #eaeaea;
+	position: relative;
+	width: 240px;
+}
+
+#input-left {
+	width: 240px;	
+	height:100px;
+	border-radius: 7px;
+	border: solid 2px #eaeaea;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#input-value {
+	position: absolute;
+	top: 50%;
+	margin-top: -17.5px;
+	margin-left: 50px;
+	height: 30px;
+	width: 75%;
+	border:2px solid white;
+	outline: none;
+	/*background-color: red;*/
+}
+
+#input-money-sign {
+	position: absolute;
+	top: 50%;
+	margin-top: -17.5px;
+	margin-left: 20px;
+	height: 30px;
 }
 
 #give-button {
-	height: 105px;
+	height: 100px;
 	margin-left: 20px;
-	width: 262px;
+	width: 240px;
 	float: right;
 	background-color: #1CBC2C;
 	border:2px solid #1CBC2C;
@@ -95,5 +159,17 @@ input {
 	border-radius: 7px;
 }
 
+#input-block {
+	display: flex;
+	justify-content: space-around;
+	width: 520px;
+}
 
+#input-block p {
+	font-size: 40px;
+	font-weight: bold;
+	color: grey;
+	width: 25%;
+	text-align: center;
+}
 
