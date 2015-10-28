@@ -173,3 +173,29 @@ input {
 	text-align: center;
 }
 
+#friends-button-block {
+	display: flex;
+	justify-content: flex-end;
+	width: 587px;
+
+}
+
+#friends-button-block #friends-button {
+	height: 80px;
+	width: 280px;
+	border-radius: 7px;
+	border: solid 2px #eaeaea;
+	border-bottom-width: 4px;
+	background: #fafafa;
+	font-size: 29px;
+	color: #777;
+}
+
+#why-block {
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 40px;
+	font-size: 24px;
+	font-style: italic;
+	color: #20A1D4;
+}
