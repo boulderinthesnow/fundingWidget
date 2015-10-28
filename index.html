@@ -11,19 +11,23 @@
 </head>
 <body ng-controller="FundController">
 	<div class="container">
+
+	<!-- TOOL TIP -->
 		<div id="tool-tip-container">
 			<div id="tool-tip" class="box-sizing">
 				<p><span style="font-weight:bold;">${{remaining}}</span> still needed for this project</p>
 			</div>
 			<div id="down-triangle" class="box-sizing"></div>
 		</div>
+
+	<!-- MAIN FUNDING AREA -->
 		<div id="funding-box" class="box-sizing">
 			<div id="status-bar" ng-mouseenter="progressBarHoverOn()" ng-mouseleave="progressBarHoverOff()">
 				<div id="progress-bar"></div>
 			</div>
 			<div id="main-content">
 				<p id="first-line"> <span style="color:#EF5F3C;"> Only 3 days left </span> to fund this project</p>
-				<p>Join the 5 other doners who have already suppported this project. Every dollar helps</p>
+				<p>Join the 5 other doners who have already supported this project. Every dollar helps</p>
 			</div>
 			<div id="wrap-block">
 				<div id="input-block">
@@ -43,6 +47,8 @@
 				<button id="friends-button">Tell your friends</button>
 			</div>
 		</div>
+
+
 	</div>
 </body>
 </html>
