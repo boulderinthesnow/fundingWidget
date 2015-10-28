@@ -1,12 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,800);
 /*
+	I added one color to the widget, as the shade of grey in the unfilled progress bar
+	and in the friends button was not specified. I used the color from the example image
+
+	COLORS GIVEN WITH THE ASSIGNMENT:
     blue: #20A1D4
     green: #1CBC2C
     orange: #EF5F3C
     black: #424242
     grey: #777
     light grey: #eaeaea
-    */
+    
+    COLORS IN EXAMPLE IMAGE:
+	blue: #20a1d4
+	green: #1cbc2c
+	orange: #ef5f3c
+	black: #424242
+	dark grey: #777777;
+	grey: #dcdcdc
+	light grey: #fafafa
+
+*/
 
 
 body {
