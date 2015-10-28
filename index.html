@@ -11,12 +11,14 @@
 </head>
 <body ng-controller="FundController">
 	<div class="container">
-		<div id="tool-tip" class="box-sizing">
-			<p><span style="font-weight:bold;">$500</span> still needed for this project</p>
+		<div id="tool-tip-container">
+			<div id="tool-tip" class="box-sizing">
+				<p><span style="font-weight:bold;">${{remaining}}</span> still needed for this project</p>
+			</div>
+			<div id="down-triangle" class="box-sizing"></div>
 		</div>
-		<div id="down-triangle" class="box-sizing"></div>
 		<div id="funding-box" class="box-sizing">
-			<div id="status-bar">
+			<div id="status-bar" ng-mouseenter="progressBarHoverOn()" ng-mouseleave="progressBarHoverOff()">
 				<div id="progress-bar"></div>
 			</div>
 			<div id="main-content">
@@ -25,10 +27,6 @@
 			</div>
 			<div id="wrap-block">
 				<div id="input-block">
-					<!-- <span id="input-container" class="box-sizing">
-						<span id="input-money-sign">$</span>
-						<input type="text" name="" id="input-value">
-					</span> -->
 					<div id="input-left">
 						<p>$</p>
 						<input type="text" ng-model="donation">
@@ -37,13 +35,13 @@
 				</div>
 			</div>
 			<div id="why-block">
-				<p>Why give $50?</p>
+				<p> 
+					<a href="http://www.auction.com">Why give $50?</a>
+				</p>
 			</div>
 			<div id="friends-button-block">
 				<button id="friends-button">Tell your friends</button>
 			</div>
-		</div>
-
 		</div>
 	</div>
 </body>
